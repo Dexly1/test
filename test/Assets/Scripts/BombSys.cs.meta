@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 2b5ec01f1566000429e2dfab529e419d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _UpExplos: {instanceID: 0}
+  - _DownExplos: {instanceID: 0}
+  - _RightExplos: {instanceID: 0}
+  - _LeftExplos: {instanceID: 0}
+  - _cell: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
