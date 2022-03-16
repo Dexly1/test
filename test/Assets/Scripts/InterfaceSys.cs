@@ -12,7 +12,7 @@ public class InterfaceSys : MonoBehaviour
     public TextMeshProUGUI _textCountEnemies;
     public TextMeshProUGUI _textGameResult;
     public GameObject _restartPanel;
-
+    public GameObject _pointJoystick;
     private void Awake()
     {
         single = this;

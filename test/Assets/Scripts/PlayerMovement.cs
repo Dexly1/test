@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityStandardAssets.CrossPlatformInput;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -10,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public Rigidbody2D _rb;
     public SpriteRenderer _playerSprite;
     public Sprite[] _Sprites;
+    public FixedJoystick fixedJoystick;
 
     void Start()
     {
@@ -19,11 +19,9 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        dirX = CrossPlatformInputManager.GetAxisRaw("Horizontal");
-        dirY = CrossPlatformInputManager.GetAxisRaw("Vertical");
-        Debug.Log($"{dirX}, {dirY}");
+        dirX = fixedJoystick.Horizontal;
+        dirY = fixedJoystick.Vertical;
         Vector3 movement = new Vector3(dirX, dirY, 0).normalized * _Speed;
-        Debug.Log(movement);
         _rb.velocity = new Vector2(movement.x, movement.y);
         SpriteDirection();
     }
